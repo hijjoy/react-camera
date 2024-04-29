@@ -30,7 +30,7 @@ const Webcam = () => {
     }
   };
 
-  const sreenShot = (target) => {
+  const screenShot = (target) => {
     setShowCanvas(true);
     setShowCam(false);
 
@@ -62,7 +62,7 @@ const Webcam = () => {
       setCount((count) => {
         if (count === 0) {
           clearInterval(timerId);
-          sreenShot(); // 같은 이미지가 두번 저장되는 문제가 있음
+          screenShot();
           return 3;
         }
         return count - 1;
